@@ -18,6 +18,7 @@
   "homepage": "https://github.com/valehmoghaddam/Prac3#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "materialize": "^1.0.0"
+    "materialize": "^1.0.0",
+    "nodemon": "^2.0.15"
   }
 }

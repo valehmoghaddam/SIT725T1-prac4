@@ -37,9 +37,16 @@ const addCards = (items) => {
       '</div></div></div>';
       $("#card-section").append(itemToAppend)
     });
+
+const getProjects = () => {
+    $.get('/api/projects',(response) => {
+        if(response.statusCode==200){
+            addCards(response.data);
+        }
+    })
 }
 
-
+}
 
 $(document).ready(function(){
     $('.materialboxed').materialbox();
